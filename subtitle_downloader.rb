@@ -77,14 +77,14 @@ class SubtitleDownloader
       exit 1
     end
 
-    knowed_extensions = %w[
+    known_extensions = %w[
      .avi .mp4 .mkv .mpg
      .mpeg .mov .rm .vob
      .wmv .flv .3gp. .3g2
     ]
     movie_extension = File.extname(@movie_path)
     
-    unless knowed_extensions.include?(movie_extension)
+    unless known_extensions.include?(movie_extension)
       puts "This file doesn't seems to be a movie."\
            " Are you sure you want to continue? [y/n]"
       exit unless $stdin.gets.chomp =~ /^[yY]$/

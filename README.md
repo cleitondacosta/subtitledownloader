@@ -17,7 +17,7 @@ your PATH.
 ./subtitle_downloader.rb /path/to/movie LANGUAGE
 ```
 
-LANGUAGE is a short to the desired subtitle language to download.
+LANGUAGE is a short to the desired subtitle language to be downloaded.
 Supported languages:
 
 | Short  | Language         |
