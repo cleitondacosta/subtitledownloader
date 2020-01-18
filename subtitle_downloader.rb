@@ -52,7 +52,7 @@ class SubtitleDownloader
 
     File.open(@subtitle_path, "wb") do |subtitle|
       begin
-        IO.copy_stream(open(url, headers), subtitle)
+        IO.copy_stream(URI.open(url, headers), subtitle)
         puts "Subtitle downloaded."
       rescue OpenURI::HTTPError => error
         http_error_message = error.message
